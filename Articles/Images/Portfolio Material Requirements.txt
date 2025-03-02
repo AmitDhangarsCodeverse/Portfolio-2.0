@@ -1,0 +1,9 @@
+SecondaryBackgroundColor-rgb(39, 40, 41);
+HoverColor-rgb(145, 75, 241);
+TextColor- rgb(217, 217, 217);
+PrimaryBackgroundColor:rgb(16, 17, 18);
+
+**Font-Family**
+MainHeading:Outfit,Outfit Placeholder,sans serif;
+ParaGraphText:Poppins,sans serif;
+

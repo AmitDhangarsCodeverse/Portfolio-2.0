@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>E-mail</title>
+ <link rel="shortcut icon" href="mail.svg" type="image/x-icon">
+ <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+ <div class="overlay"></div>
+ <div class="conatiner mt-5">
+  <div class="row d-flex justify-content-center align-items-center flex-column p-4 d-flex justify-content-center align-items-center">
+  <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-8 col-sm-6 d-flex justify-content-center"><img src="Social Icons Images/gmail-icon-free-png.webp" alt="" class="img-fluid"></div>
+ <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-8 col-sm-6 p-2"><p class="mb-0 text-center">GitHub:AmitDhangarscodeverse</p></div>
+ <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-8 col-sm-6 py-1 d-flex justify-content-center align-items-center"><div class="btn btn-primary"><a href="mailto:amitdhangar531@gmail.com"><p class="mb-0">Procced to G-mail</p></a></div></div>
+</div></div>
+ <!-- CSS -->
+ <style>
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  *{
+ margin: 0;
+ padding: 0;
+ color:white;
+ font-family: "Poppins", serif;
+}
+body{
+
+ background-color:rgb(16, 17, 18);
+}
+.overlay::before{
+ position:fixed;
+ content:" ";
+ height: 100vh;
+ width: 100vw;
+ top: 0;
+ left: 0;
+ pointer-events: none;
+ z-index:100;
+ opacity: 0.03;
+ background:url(noise.png);
+}
+.img-fluid{
+ height:10rem;
+ width:auto;
+}
+p{
+ font-size:clamp(.7rem,2vw,2rem);
+}
+.btn p{
+ font-size:clamp(.4rem,2vw,.9rem);
+ color:white;
+ transition: transform 10ms ease-in-out;
+ font-weight: 500;
+}
+.btn:hover p{
+ transform:scale(102%);
+}
+a{
+ text-decoration: none;
+}
+
+</style>
+
+</body>
+</html>

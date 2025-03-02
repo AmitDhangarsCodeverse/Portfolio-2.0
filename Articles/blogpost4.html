@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Understanding CSS Grid and Flexbox</title>
+ <link rel="stylesheet" href="bootstrap.css">
+ <link rel="shortcut icon" href="Article Fevicon.webp" type="image/x-icon">
+</head>
+<body>
+<div class="overlay"></div>
+<div class="container">
+ <div class="row">
+  <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-6">
+   <img src="Images/Two coders.avif" alt="" class="img-fluid rounded-3">
+   <div class="date-section d-flex align-item-center py-2"><p class="mb-0">28 Feburary 2025</p></div>
+   <div class="article-section">
+    <h1>Understanding CSS Grid and Flexbox: A Comprehensive Guide</h1>
+
+    <h5>What is CSS Grid?</h5>
+    <p>• CSS Grid Layout is a two-dimensional layout system for the web. It allows you to design web pages using rows and columns, making it easy to create complex layouts.</p>
+    <p>• With CSS Grid, you define grid containers and place grid items inside them, offering flexibility in both horizontal and vertical directions.</p>
+    <p>• The grid system allows for precise alignment of elements, making it ideal for building complex web layouts.</p>
+
+    <h5>Basic CSS Grid Syntax</h5>
+    <p>• To create a grid, use `display: grid;` on the container element.</p>
+    <p>• Define the number of columns and rows with the `grid-template-columns` and `grid-template-rows` properties, respectively.</p>
+    <p>• Use `grid-column` and `grid-row` properties on child elements to define how they will occupy the grid.</p>
+
+    <h5>What is Flexbox?</h5>
+    <p>• Flexbox (Flexible Box Layout) is a one-dimensional layout system that arranges elements in a row or column.</p>
+    <p>• Flexbox makes it easier to align and distribute space among items in a container, even when their size is unknown or dynamic.</p>
+    <p>• It is particularly useful when creating responsive layouts or when items need to be evenly distributed within a container.</p>
+
+    <h5>Basic Flexbox Syntax</h5>
+    <p>• To activate Flexbox, apply `display: flex;` to the container element.</p>
+    <p>• Use the `flex-direction` property to determine whether the items will be arranged in a row or column.</p>
+    <p>• The `justify-content` property helps align items horizontally (left, center, right, space between, etc.), while `align-items` is used to align them vertically.</p>
+
+    <h5>CSS Grid vs Flexbox: Key Differences</h5>
+    <p>• Grid is a two-dimensional system (both rows and columns), while Flexbox is one-dimensional (either in rows or columns).</p>
+    <p>• Use Grid when you need complex layouts with precise control over both rows and columns. Use Flexbox for simpler layouts, or when you want to align elements in a single axis.</p>
+    <p>• Flexbox can be more intuitive for simpler designs, while Grid excels at creating more complex structures.</p>
+
+    <h5>When to Use CSS Grid</h5>
+    <p>• Use Grid when you need to create complex layouts with both columns and rows, like magazine-style layouts, dashboards, or overlapping content.</p>
+    <p>• It is also helpful for large-scale layouts with precise control over element placement.</p>
+    <p>• Grid allows you to create asymmetrical designs, align items with ease, and define the size of rows and columns in a very flexible way.</p>
+
+    <h5>When to Use Flexbox</h5>
+    <p>• Use Flexbox for simple, one-dimensional layouts, such as navigation bars, footers, or single rows/columns of items.</p>
+    <p>• Flexbox is great for distributing space within a container, ensuring that items are aligned correctly and that they resize dynamically based on available space.</p>
+    <p>• Flexbox is also useful when building responsive layouts where the alignment of elements changes depending on the viewport size.</p>
+
+    <h5>Practical Example: CSS Grid Layout</h5>
+    <p>• To create a simple grid layout with three columns, you can use the following code:</p>
+    <pre>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .item {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+    </pre>
+    <p>• This will create a responsive layout with three equal-width columns, and the `gap` property will add space between items.</p>
+
+    <h5>Practical Example: Flexbox Layout</h5>
+    <p>• To create a simple flexbox layout with centered items in a row, you can use the following code:</p>
+    <pre>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+        }
+    </pre>
+    <p>• This will create a flex container where the items are centered both horizontally and vertically within the container.</p>
+
+    <h5>Conclusion</h5>
+    <p>• CSS Grid and Flexbox are both powerful layout systems that simplify the process of building modern web layouts.</p>
+    <p>• Use CSS Grid when you need a two-dimensional layout with precise control over rows and columns, and use Flexbox for one-dimensional layouts that require flexible, dynamic alignment.</p>
+    <p>• Knowing when and how to use these layout systems will help you create responsive, maintainable, and efficient web designs.</p>
+
+
+   </div>
+  </div>
+ </div>
+ <div class="more-article-section">
+  <h3>More Article</h3>
+  <div class="blog-post-container row gap-2 m-1">
+    <div class="blog-card rounded-3 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-6 p-0 overflow-hidden">
+      <div class="blog-thumbnail"><img src="Images/Team Discussion.avif" alt=""></div>
+      <div class="blog-title"><p class="mb-0 p-1">March 22,2025</p><a href="Blogpost1.html"><h5 class="px-1">Mastering Responsive Design</h5></a></div>
+    </div>
+    <div class="blog-card rounded-3 col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 p-0 overflow-hidden">
+      <div class="blog-thumbnail"><img src="Images/laptop_on_desk.avif" alt=""></div>
+      <div class="blog-title"><p class="mb-0 p-1">March 22,2025</p><a href="blogpost3.html"><h5 class="px-1">Improving Web Performance</h5></a></div>
+    </div>
+    <div class="blog-card rounded-3 col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 p-0 overflow-hidden">
+     <div class="blog-thumbnail"><img src="Images/group_of_people.avif" alt=""></div>
+     <div class="blog-title"><p class="mb-0 p-1">March 22,2025</p><a href="blogpost2.html"><h5 class="px-1">Modern Frontend Development Best Practices</h5></a></div>
+   </div>
+   <div class="blog-card rounded-3 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 p-0 overflow-hidden">
+    <div class="blog-thumbnail"><img src="Images/Post/blog_post_2.avif" alt=""></div>
+    <div class="blog-title"><p class="mb-0 p-1">March 22,2025</p><a href="blogpost5.html"><h5 class="px-1">A Beginner’s Guide to JavaScript Frameworks</h5></a></div>
+ 
+ </div>
+ </div>
+ <div class="copyright-section d-flex justify-content-center align-item-center p-1"><p>&COPY;Amit Dhangar all rights reserved</p></div>
+</div>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+ margin: 0;
+ padding:1rem;
+ background-color: rgb(16, 17, 18);
+ color: white;
+ font-family: "Poppins", serif;
+}
+img{
+ height:8rem;
+}
+p{
+ font-size: clamp(.6rem,2vw,.8rem);
+}
+h1{ 
+ font-family: "Outfit", serif;
+ font-size:clamp(1rem,3vw,3rem);
+}
+h3{
+ font-size:clamp(.55rem,2vw,1rem); 
+}
+h5{
+  font-size: clamp(.7rem,2vw,2.5rem);
+}
+.blog-card{
+ background-color:rgb(39, 40, 41);
+ cursor:pointer;
+}
+.blog-thumbnail img{
+ height:7rem;;
+ width:100%;
+ transition: transform 0.4s ease;
+}
+.blog-thumbnail img:hover{
+  transform: scale(110%);
+ }
+.blog-title p{
+font-size: clamp(.45rem,2vw,.6rem);
+}
+.blog-title h5{
+  font-size:clamp(.5rem,2vw,.8rem); 
+}
+.blog-title a{
+  text-decoration: none;
+  color: white;
+}
+.blog-title h5:hover{
+  color:rgb(145, 75, 241);
+}
+.overlay::before{
+ position:fixed;
+ content:" ";
+ height: 100vh;
+ width: 100vw;
+ top: 0;
+ left: 0;
+ pointer-events: none;
+ z-index:1000;
+ opacity: 0.05;
+ background:url(noise.png);
+}
+</style>
+</body>
+</html>
