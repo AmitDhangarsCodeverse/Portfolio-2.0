@@ -48,7 +48,7 @@ const RevealingAnimation=(target)=>{
       let tgtanswer=answers.item(target);
       if(target>=-1){
             setTimeout(()=>{
-                  tgtanswer.style.height="3.5vh"; 
+                  tgtanswer.style.height="2.5vh"; 
                 },7000)
       }
       tgtanswer.style.height="15vh";
@@ -77,7 +77,6 @@ class Email{
       SenderEmail:this.SenderEmail,
       SenderMessage:this.SenderMessage,
      }
-    let response=confirm(`Is this Information is correct?\n Name:${SenderName},E-mail:${SenderEmail}and Message:${SenderMessage}`);
    }
    setdetails(SenderName,SenderEmail,SenderMessage){ 
    }
