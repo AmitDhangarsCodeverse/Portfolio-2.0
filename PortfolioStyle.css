@@ -315,7 +315,7 @@ font-size:clamp(.5rem,2vh,1.3rem);
 }
 .counter span{
  display:block;
- font-size:clamp(2rem,4vw,3.8rem);
+ font-size:clamp(3rem,6vw,3.8rem);
  font-weight:600;
  font-family: "Outfit", serif; 
 }
