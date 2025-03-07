@@ -241,13 +241,17 @@ font-size:clamp(.5rem,2vh,1.3rem);
 /*Profile-section*/
 
 .introduction-section{
- height:auto;
- width:90%;
+ max-height:max-content;
+ width:auto;
  background-color:rgb(39, 40, 41);
 }
 .intro-container .title{
  font-size:clamp(1rem,3vw,3rem);
  font-weight: 700;
+}
+.intro-container .title h4{
+  font-weight:600;
+  font-family:"Outfit", sans-serif;
 }
 .profile-photo{
  border-radius:.6rem;
@@ -258,6 +262,9 @@ font-size:clamp(.5rem,2vh,1.3rem);
 }
 .designation p{
  font-size: clamp(.7rem,3vw,.8rem);
+}
+.social-media{
+  transition: all .3s ease-in;
 }
 .social-media:hover{
  background-color:rgb(145, 75, 241);
@@ -288,34 +295,38 @@ font-size:clamp(.5rem,2vh,1.3rem);
 /****************************/
 .main-section{
  height:95vh;
+ max-width:100%;
 }
-/*********introduction-headline-section*************/
+/*********introduction-headline-section*************/ 
 .headline h1{
- font-size:clamp(1.8rem,4vw,3rem);
- font-weight: 600;
+ font-size:clamp(1.7rem,5vw,3.8rem);
+ font-weight: 550;
  font-family: "Outfit", serif; 
 }
 .headline span{
- font-size:clamp(1.7 rem,4.5vw,3rem);
- font-weight: 600;
- font-family: "Outfit", serif;
+  font-size:clamp(1.7rem,5vw,3.8rem);
+  font-weight: 550;
+  font-family: "Outfit", serif; 
  color:rgb(145, 75, 241);
 }
 .headline p{
- font-size: clamp(.55rem,2vw,.8rem);
+ font-size: clamp(.6rem,2vw,.8rem);
+ color:rgb(217, 217, 217);
 }
 .counter span{
  display:block;
- font-size:clamp(.4rem,8vh,5rem);
+ font-size:clamp(2rem,4vw,3.8rem);
  font-weight:600;
  font-family: "Outfit", serif; 
 }
 .counter p{
- font-size:clamp(.4rem,2vh,.8rem);
+  font-size: clamp(.6rem,2vw,.8rem);
  font-weight:500;
  margin-bottom: 0;
  font-family: "Poppins", serif;
+ color:rgb(217, 217, 217);
 }
+
 .talk-button p{
  margin-bottom: 0;
  font-size:.7rem;
@@ -716,7 +727,7 @@ textarea::placeholder{
   font-size:clamp(.5rem,3vw,.8rem);
 }
 /*Media Queries*/
-@media (min-width: 1400px) {
+@media (min-width:992px) {
   .main-section{
     height:95vh;
     overflow-y:scroll;
@@ -736,14 +747,19 @@ textarea::placeholder{
   width:8vh;
 }
 }
-/*
+
 @media (max-width: 1200px) {
 }
 @media (max-width: 992px) {
 }
 @media (max-width: 768px) {
-
-    }
+  
 @media (max-width: 576px){
-
-} */
+  .introduction-section{
+    width:90%;
+  }
+  .navbar{
+    width:90%;
+  }
+    }
+}
