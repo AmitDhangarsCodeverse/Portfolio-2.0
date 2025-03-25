@@ -38,6 +38,7 @@ ParaGraphText:Poppins,sans serif; */
 .nav-section{
   top:0;
   position: sticky;
+  z-index:1000;
 }
 .navbar{
  height: 7vh;
@@ -615,14 +616,14 @@ font-size: clamp(.6rem,2vw,.6rem);
   transition: all .4s ease-in;
 }
 .question-section p{
-  font-size:clamp(.6rem,2vw,.8rem);
+  font-size:clamp(.5rem,2vw,.8rem);
   overflow:hidden;
   line-height:1rem;
 }
 .answer-section p{
   padding-top:1.5%;
   padding-right:1%;
-  font-size:clamp(.4rem,2vw,.65rem);
+  font-size:clamp(.45rem,2vw,.65rem);
 }
 .answer-section p::-webkit-scrollbar{
   display: none;
