@@ -706,18 +706,18 @@ transition: transform .4s ease-in-out;
 label{
   font-size: clamp(.55rem,2vw,.7rem);
 }
-textarea{
-  background-color:rgb(69, 69, 69) ;
+textarea {
+  background-color: rgb(69, 69, 69);
   outline: 0;
-  font-size:clamp(.2em,1vw,.5em);
+  font-size:3px;
 }
 textarea::placeholder{
   font-size: clamp(.5rem,2vw,.7rem);
-
 }
-
-.btn p{
-  font-size:clamp(.5rem,3vw,.6rem);
+.btn a{
+  font-size:clamp(.5rem,3vw,.8rem);
+  color: white;
+  text-decoration: none;
 }
 .contact-form-container p{
   font-size:clamp(.5rem,3vw,.6rem);
@@ -728,6 +728,9 @@ textarea::placeholder{
 }
 /*Media Queries*/
 @media (min-width:992px) {
+  .overlay::before{
+    opacity: 0.02;
+   }
   .main-section{
     height:95vh;
     overflow-y:scroll;
@@ -755,6 +758,9 @@ textarea::placeholder{
 @media (max-width: 768px) {
   
 @media (max-width: 576px){
+  .overlay::before{
+    opacity: 0.02;
+   }
   .introduction-section{
     width:90%;
   }
