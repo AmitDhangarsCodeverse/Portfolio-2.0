@@ -237,10 +237,20 @@ font-size:clamp(.5rem,2vh,1.3rem);
   }
   
 }
+/*Alert-Message*/
 
-
+@keyframes alert-msg {
+  0% {
+    left: 2.5%;
+  }
+  50% {
+    left:97%;
+  }
+  100%{
+    left: 2.5%;
+  }
+}
 /*Profile-section*/
-
 .introduction-section{
  max-height:max-content;
  width:auto;
@@ -771,4 +781,5 @@ textarea::placeholder{
     width:90%;
   }
     }
+
 }
