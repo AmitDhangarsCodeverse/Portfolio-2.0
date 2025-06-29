@@ -22,6 +22,9 @@ ParaGraphText:Poppins,sans serif; */
 .body{
  background-color:rgb(16, 17, 18);
 }
+img{
+  -webkit-user-drag:none;
+}
 .overlay::before{
  position:fixed;
  content:" ";
